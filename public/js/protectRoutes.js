@@ -10,6 +10,7 @@ export async function isAuthenticated() {
     });
     if (newAccessData.accessToken && newAccessData.refreshToken) {
       // Salvando os tokens no localStorage
+      console.log("Salvando novos Dados")
       localStorage.setItem("accessToken", newAccessData.accessToken);
       localStorage.setItem("refreshToken", newAccessData.refreshToken);
       return true;

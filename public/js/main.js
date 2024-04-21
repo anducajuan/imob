@@ -1,14 +1,10 @@
-import { api_url } from "./utils/constants.js";
-import { protectRoute, isAuthenticated } from "./protectRoutes.js";
+import { head, body } from "./layout.js";
 
-protectRoute();
+let headElement = document.head
+let bodyElement = document.body
+headElement.insertAdjacentHTML("afterbegin", head);
+bodyElement.insertAdjacentHTML("afterbegin", body)
 
-logoutButton = document.getElementById("logout");
-logoutButton.addEventListener("click", () => {
-    localStorage.setItem("accessToken", null);
-    localStorage.setItem("refreshToken", null);
-    window.location.href = "/login";
-})
 
 
 

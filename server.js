@@ -20,6 +20,9 @@ app.get('/home', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/public/pages/login.html');
 });
+app.get('/clientes', (req, res) => {
+    res.sendFile(__dirname + '/public/pages/customer_tools.html');
+});
 
 // Iniciando o servidor
 app.listen(PORT, () => {
