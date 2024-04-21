@@ -1,10 +1,10 @@
-import { head, body } from "./layout.js";
-
-let headElement = document.head
-let bodyElement = document.body
-headElement.insertAdjacentHTML("afterbegin", head);
-bodyElement.insertAdjacentHTML("afterbegin", body)
-
+export function runMainRoutine(){
+    const logoutButton = document.getElementById("logout");
+    logoutButton.addEventListener("click", () => {
+    localStorage.removeItem("accessToken");
+    localStorage.removeItem("refreshToken");
+})
+}
 
 
 

@@ -1,8 +1,6 @@
 import { protectRoute } from "../protectRoutes.js";
+import { runMainRoutine} from "../main.js"
 
 protectRoute();
-const logoutButton = document.getElementById("logout");
-logoutButton.addEventListener("click", () => {
-    localStorage.removeItem("accessToken");
-    localStorage.removeItem("refreshToken");
-})
+runMainRoutine();
+
