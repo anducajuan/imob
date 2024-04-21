@@ -1,0 +1,21 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+}
+
+.main {
+    padding: 20px;
+}
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input.form-control {
+    margin-bottom: 15px; /* Espaço entre os campos do formulário */
+}
+
