@@ -1,21 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
 body {
-    font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Cor de fundo do corpo */
+  font-family: "Oswald", sans-serif;
 }
 
-.sidebar {
-    background-color: #f8f9fa;
+.container {
+  margin-top: 50px; /* Espaçamento superior */
 }
 
-.main {
-    padding: 20px;
-}
 .card {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #ced4da; /* Borda do cartão */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra */
+  background: #eae5ff; /* Gradiente de 6 cores */
 }
 
-input.form-control {
-    margin-bottom: 15px; /* Espaço entre os campos do formulário */
+.card-body {
+  padding: 40px; /* Preenchimento interno */
 }
 
+.form-group {
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+label {
+  font-weight: 500; /* Peso da fonte */
+}
+
+.btn-primary {
+  background-color: #8562ff; /* Cor de fundo do botão */
+  border: none; /* Sem borda */
+  box-shadow:
+    0px 4px 6px -1px rgba(133, 98, 255, 0.4),
+    0px 2px 4px -1px rgba(133, 98, 255, 0.3); /* Sombra gradiente */
+}
+
+.btn-primary:hover {
+  background-color: #6349cc; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.btn-block {
+  border-radius: 10px; /* Borda arredondada */
+  padding: 10px 0; /* Preenchimento interno */
+  font-weight: bold; /* Peso da fonte */
+  color: #fff; /* Cor do texto */
+  text-transform: uppercase; /* Transformar texto em maiúsculas */
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+h1 {
+  font-size: 2.5rem; /* Tamanho da fonte do cabeçalho */
+  color: #3f3f3f; /* Cor do texto */
+}

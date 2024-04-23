@@ -1,39 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplicação Web</title>
     <!-- Inclusão do CSS do Bootstrap via CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="container">
-        <div class="row justify-content-center align-items-center" style="height: 100vh;">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="text-center mb-4">Login</h1>
-                        <form id="loginForm">
-                            <div class="form-group">
-                                <label for="username">Usuário:</label>
-                                <input type="text" id="username" name="username" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Senha:</label>
-                                <input type="password" id="password" name="password" class="form-control" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
-                        </form>
-                    </div>
+      <div
+        class="row justify-content-center align-items-center"
+        style="height: 100vh"
+      >
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="text-center mb-4">Login</h1>
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="username">Usuário:</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="form-control"
+                    required
+                  />
                 </div>
+                <div class="form-group">
+                  <label for="password">Senha:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Entrar
+                </button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <script type="module" src="js/login.js"></script> <!-- Lógica de autenticação -->
-</body>
-
+    <script type="module" src="js/login.js"></script>
+    <!-- Lógica de autenticação -->
+  </body>
 </html>
