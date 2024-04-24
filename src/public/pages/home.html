@@ -18,18 +18,20 @@
         <!-- Navbar lateral -->
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
+            <div class="card" onclick="window.location.href='/login'">
+              <div class="card-body">
                 <a class="nav-link active" href="/login" id="logout"
                   >Log Out <span class="sr-only">(current)</span></a
                 >
-              </li>
-              <li class="nav-item">
+              </div>
+            </div>
+            <div class="card mt-3" onclick="window.location.href='/clientes'">
+              <div class="card-body">
                 <a class="nav-link active" href="/clientes" id="clientes"
                   >Clientes<span class="sr-only">(current)</span></a
                 >
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </nav>
 

@@ -5,18 +5,28 @@ body {
   font-family: "Oswald", sans-serif; /* Fonte */
 }
 
+a {
+  color: #7e51df; /* cor do texto dos links */
+  font-size: 20px; /* tamanho do texto */
+}
+
+a:hover {
+  color: #864dbb; /* cor do texto quando colocado mouse em cima dos links */
+}
+
 .navbar {
   background-color: #8562ff; /* Cor de fundo da barra de navegação */
 }
 
 .nav-link {
-  color: #ffffff; /* Cor do texto dos links na barra de navegação */
+  color: inherit, #ffffff; /* Cor do texto dos links na barra de navegação */
 }
 
 .sidebar {
   background-color: #f5f0ff; /* Cor de fundo da barra lateral */
   border-right: 1px solid #ced4da; /* Borda direita da barra lateral */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra */
+  color: inherit;
 }
 
 .nav.flex-column .nav-link {
@@ -33,30 +43,15 @@ body {
   padding: 20px;
 }
 
-/* Estilo para o container dos cards */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
 /* Estilo para os cards */
 .card {
-  background-color: #ffffff;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  cursor: pointer;
 }
 
-/* Estilo para o título dos cards */
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 10px;
-}
-
-/* Estilo para o conteúdo dos cards */
-.card-content {
-  color: #666666;
+.card:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra ao passar o mouse */
 }
