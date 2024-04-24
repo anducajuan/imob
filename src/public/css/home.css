@@ -7,7 +7,6 @@ body {
 
 a {
   color: #7e51df; /* cor do texto dos links */
-  font-size: 20px; /* tamanho do texto */
 }
 
 a:hover {
@@ -33,6 +32,30 @@ a:hover {
   color: #343a40; /* Cor do texto dos links na barra lateral */
 }
 
+.navbar {
+  background-color: #7e51df; /* Cor de fundo da navbar */
+}
+
+.navbar-brand {
+  color: #fff; /* Cor do texto do logo */
+}
+
+.navbar-nav .nav-link {
+  color: #fff; /* Cor do texto dos links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ccc; /* Cor do texto dos links ao passar o mouse */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Cor do ícone do toggler */
+}
+
+.navbar-toggler {
+  border-color: #fff; /* Cor da borda do toggler */
+}
+
 .main-content {
   background-color: #ffffff; /* Cor de fundo do conteúdo principal */
   border-left: 1px solid #ced4da; /* Borda esquerda do conteúdo principal */
@@ -45,7 +68,7 @@ a:hover {
 
 /* Estilo para os cards */
 .card {
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   align-items: center;
   cursor: pointer;
