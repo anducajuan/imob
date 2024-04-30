@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+
 body {
   background-color: #f8f9fa; /* Cor de fundo do corpo */
-  font-family: "Oswald", sans-serif;
+  font-family: "Sanchez", sans-serif;
 }
 
 .container {
